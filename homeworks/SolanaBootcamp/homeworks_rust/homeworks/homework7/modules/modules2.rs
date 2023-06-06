@@ -3,13 +3,12 @@
 // 'use' and 'as' keywords. Fix these 'use' statements to make the code compile.
 // Make me compile! Execute `rustlings hint modules2` for hints :)
 
-// I AM NOT DONE
+// I AM DONE
 
 mod delicious_snacks {
-
-    // TODO: Fix these use statements
-    use self::fruits::PEAR as ???
-    use self::veggies::CUCUMBER as ???
+    // Fix the use statements by providing new names using the `as` keyword
+    pub use self::fruits::{PEAR as fruit};
+    pub use self::veggies::{CUCUMBER as veggie};
 
     mod fruits {
         pub const PEAR: &'static str = "Pear";
